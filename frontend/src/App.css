@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header ul li {
+  margin-left: 2rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+button.quote-btn,
+button.showcase-btn {
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.quote-btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+button.showcase-btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.contact-info {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+  

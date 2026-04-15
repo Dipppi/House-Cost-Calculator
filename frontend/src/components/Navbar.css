@@ -1,0 +1,28 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(31, 41, 55, 0.9); /* slight transparency */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}

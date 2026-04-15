@@ -1,0 +1,35 @@
+.home {
+    height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 80px;
+}
+
+/* CENTER CARD */
+.home-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    width: 90%;
+}
+
+/* TEXT */
+.home-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 16px;
+}
