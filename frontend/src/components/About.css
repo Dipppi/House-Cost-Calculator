@@ -1,17 +1,23 @@
-
+:root {
+    --accent: #00df9a;
+    --text-main: #ffffff;
+    --text-muted: #b0bec5;
+}
 
 .about-container {
     padding: 40px;
-    background-color: #333333; 
-    color: white;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a262b, #203a43, #2c5364);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .about-heading {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
+    color: var(--accent);
 }
 
 .about-subheading {
@@ -19,22 +25,25 @@
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 10px;
-    text-align: left; 
+    text-align: left;
+    color: var(--accent);
 }
 
 .about-paragraph {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: var(--text-muted);
 }
 
 .about-footer {
     margin-top: 40px;
     text-align: center;
     font-size: 14px;
+    color: var(--text-muted);
 }
 
-
+/* Structural elements remain unchanged */
 .about-header {
     display: flex;
     align-items: center;
@@ -44,7 +53,8 @@
 .about-image {
     width: 150px;
     height: auto;
-    margin-right: 20px; 
+    margin-right: 20px;
+    border-radius: 8px;
 }
 
 .about-section {
@@ -60,4 +70,5 @@
 
 .about-section img.right {
     margin-left: 20px; 
+    border-radius: 8px;
 }

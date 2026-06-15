@@ -1,0 +1,43 @@
+# ======================
+# NODE MODULES
+# ======================
+node_modules/
+Backend/node_modules/
+frontend/node_modules/
+
+# ======================
+# ENV FILES (CRITICAL)
+# ======================
+.env
+.env.*
+Backend/.env
+frontend/.env
+
+# ======================
+# BUILD FILES
+# ======================
+build/
+frontend/build/
+
+# ======================
+# TESTING
+# ======================
+coverage/
+
+# ======================
+# LOG FILES
+# ======================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ======================
+# OS FILES
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# OPTIONAL (IDE)
+# ======================
+.vscode/

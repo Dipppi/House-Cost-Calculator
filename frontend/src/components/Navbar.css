@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(31, 41, 55, 0.9); /* slight transparency */
+    background-color: rgba(31, 41, 55, 0.9); 
     padding: 15px 0;
     display: flex;
     justify-content: center;

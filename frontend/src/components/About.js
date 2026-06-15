@@ -27,11 +27,6 @@ const About = () => {
                     Our vision is to empower people with the tools they need to make informed decisions during the home construction process. By providing a transparent, simple, and efficient way to calculate costs, we aim to take the guesswork out of budgeting and help users avoid surprises down the line. We believe that anyone, regardless of their technical expertise, should have access to tools that make building their dream home easier.
                 </p>
             </div>
-
-            <footer className="about-footer">
-                <p>+91 8860990014</p>
-                <p>poornima12029@gmail.com</p>
-            </footer>
         </div>
     );
 };

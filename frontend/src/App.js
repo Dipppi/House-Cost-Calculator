@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import About from './components/About';
 import Services from './components/Services';
 import Calculator from './components/Calculator';
+import Favorites from './components/Favorites';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path="/services" element={<Services />} />
                 <Route path="/calculator" element={<Calculator />} />
                 <Route path="/history" element={<History />} />
+                <Route path="/favorites" element={<Favorites />} />
             </Routes>
         </>
     );

@@ -5,10 +5,14 @@ import html2canvas from "html2canvas";
 
 const History = () => {
     const [data, setData] = useState([]);
+    const [favorites, setFavorites] = useState([]); // ⭐ NEW STATE
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetchHistory();
+
+        const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+        setFavorites(storedFavorites);
     }, []);
 
     const fetchHistory = async () => {
@@ -44,21 +48,21 @@ const History = () => {
     };
 
     const toggleFavorite = (item) => {
-        let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+        let updated;
 
         const exists = favorites.find(fav => fav._id === item._id);
 
         if (exists) {
-            favorites = favorites.filter(fav => fav._id !== item._id);
+            updated = favorites.filter(fav => fav._id !== item._id);
         } else {
-            favorites.push(item);
+            updated = [...favorites, item];
         }
 
-        localStorage.setItem("favorites", JSON.stringify(favorites));
+        setFavorites(updated); 
+        localStorage.setItem("favorites", JSON.stringify(updated));
     };
 
     const isFavorite = (id) => {
-        const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
         return favorites.some(fav => fav._id === id);
     };
 

@@ -1,49 +1,102 @@
-.calculator-page {
-    background-image: url('./calculatorbg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     min-height: 100vh;
+}
 
+.main-layout {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding-top: 80px;
+    min-height: 100vh;
+    gap: 30px;
 }
 
-.calculator {
-    background: rgba(255, 255, 255, 0.95);
+.left-panel {
+    width: 340px;
+    background: #1f2a2e;
     padding: 25px;
-    width: 350px;
-    max-width: 90%;
-    border-radius: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.left-panel h2 {
+    text-align: center;
+    color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+.left-panel input,
+.left-panel select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #ecf0f1;
+    font-size: 14px;
+}
+
+.left-panel button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #2ecc71;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left-panel button:hover {
+    background: #27ae60;
+}
+
+/* 📊 RIGHT PANEL (results) */
+.right-panel {
+    width: 380px;
+    background: #1f2a2e;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.right-panel h3 {
+    color: #2ecc71;
     text-align: center;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.breakdown p {
+    margin: 6px 0;
 }
 
-.input-group input,
-.input-group select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #f4a261;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.ai-box {
+    margin-top: 15px;
+    background: #263238;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .chart-container {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
 }

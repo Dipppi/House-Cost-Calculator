@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.css";
-import bg from "./home4.jpg";   // ✅ import image
+import bg from "./home4.jpg";
 
 function HomePage() {
     return (
