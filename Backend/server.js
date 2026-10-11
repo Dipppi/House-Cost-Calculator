@@ -6,6 +6,9 @@ const cors = require("cors");
 const CostEstimate = require("./models/costestimate");
 
 const app = express();
+app.get('/', (req, res) => {
+  res.send('House Cost Calculator API is running!');
+});
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
